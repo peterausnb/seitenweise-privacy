@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "de.peterausnb.seitenweise",
+      "sha256_cert_fingerprints": [
+        "B6:27:E9:B3:B2:A1:8D:74:71:AB:B9:24:A2:D1:7F:EA:75:94:2C:D1:3D:6E:69:F4:16:D6:23:C3:46:33:20:E9"
+      ]
+    }
+  }
+]
