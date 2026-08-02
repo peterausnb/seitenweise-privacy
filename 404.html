@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Geteiltes Buch – Seitenweise</title>
+  <style>
+    :root { --bg:#fff8f0; --card:#fffdf9; --text:#352a2a; --muted:#6d5c5c; --accent:#6a001f; --border:#eadfd4; }
+    * { box-sizing:border-box; }
+    body { margin:0; min-height:100vh; display:grid; place-items:center; padding:24px; font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; background:var(--bg); color:var(--text); }
+    main { width:min(100%,680px); background:var(--card); border:1px solid var(--border); border-radius:22px; padding:30px; box-shadow:0 18px 45px rgba(80,20,35,.10); }
+    .brand { color:var(--accent); font-weight:800; letter-spacing:.02em; }
+    h1 { margin:.45rem 0 .8rem; font-size:clamp(1.8rem,5vw,2.6rem); line-height:1.12; }
+    p { line-height:1.6; }
+    .isbn { margin:1.4rem 0; padding:12px 14px; border-radius:12px; background:#f6ece9; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; }
+    .actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:1.5rem; }
+    a { display:inline-block; padding:12px 16px; border-radius:12px; text-decoration:none; font-weight:700; }
+    .primary { background:var(--accent); color:white; }
+    .secondary { border:1px solid var(--border); color:var(--accent); background:white; }
+    .hint { color:var(--muted); font-size:.92rem; }
+  </style>
+</head>
+<body>
+<main>
+  <div class="brand">SEITENWEISE</div>
+  <h1 id="title">Geteiltes Buch öffnen</h1>
+  <p id="description">Dieser Link gehört zu einem Buch, das mit Seitenweise geteilt wurde.</p>
+  <div class="isbn" id="isbn" hidden></div>
+  <div class="actions">
+    <a class="primary" href="https://play.google.com/store/apps/details?id=de.peterausnb.seitenweise">Seitenweise im Play Store</a>
+    <a class="secondary" href="./">Datenschutzerklärung</a>
+  </div>
+  <p class="hint">Ist Seitenweise installiert, kann Android den Link direkt an die App übergeben.</p>
+</main>
+<script>
+  (() => {
+    const match = window.location.pathname.match(/\/book\/isbn\/([0-9Xx -]+)\/?$/);
+    if (!match) {
+      document.getElementById('title').textContent = 'Seite nicht gefunden';
+      document.getElementById('description').textContent = 'Die angeforderte Seitenweise-Seite existiert nicht.';
+      return;
+    }
+    const isbn = match[1].replace(/[ -]/g, '').toUpperCase();
+    const validShape = /^(?:\d{13}|\d{9}[\dX])$/.test(isbn);
+    if (!validShape) {
+      document.getElementById('title').textContent = 'Ungültiger Buchlink';
+      document.getElementById('description').textContent = 'Im Link wurde keine gültig formatierte ISBN gefunden.';
+      return;
+    }
+    document.title = `ISBN ${isbn} – Seitenweise`;
+    document.getElementById('isbn').hidden = false;
+    document.getElementById('isbn').textContent = `ISBN ${isbn}`;
+  })();
+</script>
+</body>
+</html>
