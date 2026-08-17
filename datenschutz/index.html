@@ -21,80 +21,92 @@
   </style>
 </head>
 <body>
-<header><div><h1>Datenschutzerklärung</h1><div class="meta">für die Android-App „Seitenweise“ · Stand 5. August 2026</div></div></header>
+<header><div><h1>Datenschutzerklärung</h1><div class="meta">für die Android-App „Seitenweise“ · Stand 17. August 2026</div></div></header>
 <main>
   <h2>1. Verantwortlicher und Datenschutzkontakt</h2>
   <p><strong>Peter Schulz</strong><br>E-Mail: <a href="mailto:info@seitenweise-app.de">info@seitenweise-app.de</a></p>
 
   <h2>2. Grundprinzip</h2>
-  <p>Seitenweise ist als lokal-first Anwendung konzipiert. Die persönliche Bibliothek, Merkliste, Lesestatus, Besitzinformationen, Bewertungen und Notizen werden grundsätzlich lokal auf dem Gerät gespeichert. Für die Kernfunktionen ist kein Seitenweise-Benutzerkonto erforderlich.</p>
-  <p>Seitenweise betreibt kein eigenes Backend und verwendet keine Werbe-, Tracking- oder Analyse-SDKs zur Erstellung von Nutzerprofilen. Kaufmöglichkeiten können als deutlich gekennzeichnete externe Werbelinks angeboten werden.</p>
+  <p>Seitenweise ist als lokal-first Anwendung konzipiert. Die persönliche Bibliothek und die zugehörigen Nutzungsdaten werden grundsätzlich lokal auf dem Gerät gespeichert. Für die Kernfunktionen ist kein Seitenweise-Benutzerkonto erforderlich.</p>
+  <p>Seitenweise betreibt kein eigenes Backend und verwendet kein eigenes Werbe-, Tracking-, Analytics- oder Crash-Reporting-SDK zur Erstellung eines zentralen Nutzerprofils. Einzelne eingebundene Google-Komponenten können die in Abschnitt 6 beschriebenen technischen Diagnose- und Nutzungsdaten verarbeiten.</p>
 
   <h2>3. Lokal gespeicherte Daten</h2>
   <p>Abhängig von der Nutzung speichert Seitenweise insbesondere folgende Daten lokal auf dem Gerät:</p>
-  <ul><li>Bücher und Buchmetadaten wie Titel, Autor, ISBN, Verlag, Erscheinungsjahr und Cover-Referenzen,</li><li>persönliche Merkliste,</li><li>Lesestatus,</li><li>Besitzart,</li><li>Medienformat,</li><li>freiwillige Bewertungen und persönliche Notizen,</li><li>technische Einstellungen der App.</li></ul>
-  <p>Diese lokalen Daten werden nicht automatisch an den Betreiber der App übertragen.</p>
+  <ul>
+    <li>Bücher und Buchmetadaten wie Titel, Autor, ISBN, Verlag, Erscheinungsjahr und Cover-Referenzen,</li>
+    <li>persönliche Merkliste,</li>
+    <li>Lesestatus, Abschlusszeitpunkte und freiwillige Leseziele,</li>
+    <li>Besitzart und Medienformat,</li>
+    <li>freiwillige Bewertungen und persönliche Notizen,</li>
+    <li>Ausleihen einschließlich Rückgabeinformationen und Verlauf,</li>
+    <li>Einstellungen der App und lokaler Erinnerungsfunktionen.</li>
+  </ul>
+  <p>Diese lokalen Daten werden nicht automatisch an den Betreiber der App übertragen. Das allgemeine Android-App-Backup ist für Seitenweise deaktiviert.</p>
 
-  <h2>4. Buchsuche, Metadaten und Empfehlungen</h2>
-  <p>Zur Suche und Ergänzung von Buchinformationen greift Seitenweise auf externe Buchdatenquellen zu, insbesondere die Deutsche Nationalbibliothek (DNB), Open Library / Internet Archive und Google Books.</p>
-  <p>Bei Katalogsuche oder ISBN-Abfrage werden hierfür erforderliche Angaben wie ISBN, Buchtitel, Autor, Suchbegriffe sowie gegebenenfalls Themen- oder Genrebegriffe an den jeweiligen Dienst übertragen. Auch bei personalisierten Buchvorschlägen können Suchbegriffe aus lokal vorhandenen Buchdaten abgeleitet werden, beispielsweise Autoren oder Themen. Die vollständige lokale Bibliothek wird dabei nicht an einen externen Anbieter übertragen.</p>
-  <p>Bei Internetzugriffen erhalten die jeweiligen Dienste technisch bedingt außerdem Verbindungsdaten wie die IP-Adresse sowie übliche HTTP-/Netzwerk-Metadaten.</p>
+  <h2>4. Buchsuche, Metadaten, Cover und Empfehlungen</h2>
+  <p>Zur Suche und Ergänzung von Buchinformationen sowie für externe Buchvorschläge greift Seitenweise auf externe Buchdatenquellen zu, insbesondere die Deutsche Nationalbibliothek (DNB), Open Library / Internet Archive und Google Books.</p>
+  <p>Je nach Funktion können hierfür ISBN, Buchtitel, Autor, Suchbegriffe sowie abgeleitete Themen-, Genre- oder Autorenbegriffe an den jeweiligen Dienst übertragen werden. Bei personalisierten externen Buchvorschlägen werden nur einzelne Suchparameter aus lokal vorhandenen Buchdaten abgeleitet; die vollständige lokale Bibliothek wird nicht an einen externen Anbieter übertragen.</p>
+  <p>Cover werden über HTTPS von den jeweiligen externen Cover-/Buchdiensten geladen. Bei Internetzugriffen erhalten die jeweiligen Dienste technisch bedingt außerdem Verbindungsdaten wie die IP-Adresse sowie übliche HTTP-/Netzwerk-Metadaten.</p>
   <ul><li>Google: <a href="https://policies.google.com/privacy">Datenschutzbestimmungen</a></li><li>Internet Archive / Open Library: <a href="https://archive.org/about/terms.php">Terms &amp; Privacy</a></li><li>Deutsche Nationalbibliothek: <a href="https://www.dnb.de/datenschutz">Datenschutz</a></li></ul>
 
   <h2>5. Google Books</h2>
-  <p>Seitenweise nutzt die Google Books API, um bei Bedarf eine passende deutschsprachige Kurzbeschreibung eines Buches zu ermitteln. Dabei werden je nach vorhandenem Datenbestand insbesondere ISBN, Titel und Autor an Google Books übermittelt. Gefundene Kurzbeschreibungen können lokal gespeichert werden.</p>
+  <p>Seitenweise nutzt die Google Books API unter anderem als begrenzte Quelle für Buchcover, deutschsprachige Kurzbeschreibungen und externe Buchvorschläge. Dabei werden je nach Funktion insbesondere ISBN, Titel, Autor oder abgeleitete Suchbegriffe an Google Books übermittelt. Gefundene Metadaten und erfolgreiche Cover-Referenzen können lokal gespeichert werden.</p>
   <p>Der in der App verwendete API-Schlüssel dient ausschließlich der technischen Authentifizierung der App gegenüber Google Books und stellt kein Nutzerkonto bei Seitenweise dar.</p>
 
   <h2>6. ISBN-/Barcode-Scanner</h2>
-  <p>Für das Scannen von ISBN-Barcodes verwendet Seitenweise den Google Code Scanner aus den Google Play-Diensten. Die Bildverarbeitung erfolgt auf dem Gerät. Seitenweise erhält nur das erkannte Scanergebnis. Nach Angaben von Google werden Bilddaten und Scanergebnisse dabei nicht von Google gespeichert.</p>
-  <p>Seitenweise nutzt die Auto-Zoom-Funktion. Nach Angaben von Google können dabei technisch erzeugte Informationen zur Scansitzung, Änderungen der Zoomstufe und vorhergesagte Begrenzungskoordinaten für Diagnose- und Nutzungsanalysezwecke verarbeitet werden. Diese Angaben sind nicht dazu bestimmt, eine Person oder ein konkretes physisches Gerät eindeutig zu identifizieren.</p>
-  <p><a href="https://developers.google.com/ml-kit/vision/barcode-scanning/code-scanner">Weitere Informationen zum Google Code Scanner</a></p>
+  <p>Für das Scannen von ISBN-Barcodes verwendet Seitenweise den Google Code Scanner aus den Google Play-Diensten. Die App selbst fordert hierfür keine Kameraberechtigung an. Die Bildverarbeitung erfolgt auf dem Gerät; Seitenweise erhält nur das erkannte Scanergebnis. Nach Angaben von Google werden Bilddaten und Scanergebnisse dabei nicht von Google gespeichert.</p>
+  <p>Google dokumentiert für die verwendeten ML-Kit-/Code-Scanner-Komponenten technische Daten für Diagnose- und Nutzungsanalysezwecke. Dazu können Geräteinformationen wie Hersteller, Modell und Betriebssystemversion, App-Informationen wie Paketname und Version, Geräte- beziehungsweise Installationskennungen sowie Performance-/Diagnosedaten gehören. Seitenweise nutzt außerdem die Auto-Zoom-Funktion; dabei können eine dynamisch erzeugte Scansitzungs-ID, Änderungen der Zoomstufe und vorhergesagte Begrenzungskoordinaten eines möglichen Barcodes verarbeitet werden.</p>
+  <p>Google gibt an, dass die von ML Kit erhobenen Daten bei der Übertragung per HTTPS verschlüsselt und von ML Kit nicht an Dritte weitergegeben werden.</p>
+  <p><a href="https://developers.google.com/ml-kit/vision/barcode-scanning/code-scanner">Google Code Scanner</a> · <a href="https://developers.google.com/ml-kit/android-data-disclosure">ML Kit Data Disclosure</a></p>
 
   <h2>7. Optionales Google-Drive-Backup</h2>
-  <p>Seitenweise kann auf ausdrücklichen Wunsch mit Google Drive verbunden werden, um Sicherungen der App-Daten zu speichern und wiederherzustellen. Die Nutzung dieser Funktion ist optional; die App bleibt ohne Google-Drive-Verbindung nutzbar.</p>
-  <p>Für die Verbindung wird die Google-Kontoautorisierung verwendet. Seitenweise fordert für die Backup-Funktion ausschließlich den eingeschränkten Google-Drive-Bereich <code>drive.appdata</code> an. Dadurch erhält die App Zugriff auf ihren eigenen App-Datenbereich in Google Drive, nicht auf beliebige persönliche Dateien im Drive des Nutzers.</p>
-  <p>In diesem App-Datenbereich wird eine versionierte JSON-Sicherung gespeichert. Sie kann insbesondere Bibliothek, Merkliste, Lesestatus, Besitzinformationen, Formate, Bewertungen, Notizen und gespeicherte Buchmetadaten enthalten.</p>
-  <p>Die Sicherungsdatei wird direkt zwischen der App und Google Drive übertragen. Der Betreiber von Seitenweise erhält keine Kopie der Sicherung auf einem eigenen Server. Die App bietet außerdem eine Funktion zum Löschen der von Seitenweise angelegten Cloud-Sicherungen.</p>
+  <p>Seitenweise kann auf ausdrücklichen Wunsch mit Google Drive verbunden werden, um Sicherungen der App-Daten zu speichern und wiederherzustellen. Die Nutzung ist optional; die App bleibt ohne Google-Drive-Verbindung nutzbar.</p>
+  <p>Für die Verbindung wird die Google-Kontoautorisierung verwendet. Seitenweise fordert ausschließlich den eingeschränkten Google-Drive-Bereich <code>drive.appdata</code> an. Dadurch erhält die App Zugriff auf ihren eigenen App-Datenbereich in Google Drive, nicht auf beliebige persönliche Dateien im Drive des Nutzers.</p>
+  <p>In diesem App-Datenbereich wird eine versionierte JSON-Sicherung gespeichert. Sie kann insbesondere Bibliothek, Merkliste, Lesestatus und Abschlusszeitpunkte, Besitz- und Medieninformationen, Bewertungen, Notizen, Ausleihen und Rückgabehistorie sowie gespeicherte Buchmetadaten enthalten. Seit Version 0.7.2 können zusätzlich bereits erfolgreich ermittelte Google-Books-Cover-Referenzen wie eine HTTPS-Bildadresse und optional eine Google-Books-Informationsadresse gesichert werden. Die eigentlichen Cover-Bilddateien werden nicht Bestandteil des Drive-Backups.</p>
+  <p>Neben einer manuell ausgelösten Sicherung kann der Nutzer in den Einstellungen eine automatische Sicherung aktivieren. Sie ist standardmäßig ausgeschaltet. Nach Aktivierung plant Android ungefähr alle 24 Stunden einen Sicherungsversuch; er wird nur bei verfügbarer Netzwerkverbindung und nicht niedrigem Akkustand ausgeführt. Kann Google Drive im Hintergrund nicht ohne erneute Nutzerautorisierung verwendet werden, fordert die Hintergrundaufgabe nicht überraschend eine Anmeldung an.</p>
+  <p>Die Sicherungsdatei wird direkt zwischen der App und Google Drive übertragen. Der Betreiber von Seitenweise erhält keine Kopie auf einem eigenen Server. Die App bietet eine Funktion zum Löschen aller von Seitenweise angelegten Drive-Sicherungen; dabei wird zugleich die automatische Sicherung deaktiviert.</p>
 
   <h2>8. Google-Konto</h2>
-  <p>Seitenweise bietet kein eigenes Nutzerkonto an. Soweit Google Drive verwendet wird, dient ein Google-Konto ausschließlich dazu, den optionalen Zugriff auf den für Seitenweise vorgesehenen Google-Drive-App-Datenbereich zu autorisieren. Seitenweise führt keine eigene serverseitige Kontodatenbank.</p>
+  <p>Seitenweise bietet kein eigenes Nutzerkonto an. Soweit Google Drive verwendet wird, dient ein Google-Konto ausschließlich dazu, den optionalen Zugriff auf den für Seitenweise vorgesehenen Google-Drive-App-Datenbereich zu autorisieren. Seitenweise führt keine eigene serverseitige Kontodatenbank und speichert Name oder E-Mail-Adresse des Google-Kontos nicht als eigenes Seitenweise-Profil.</p>
 
-  <h2>9. Externe Amazon-Werbelinks</h2>
-  <p>Seitenweise kann bei einzelnen Büchern einen freiwilligen und deutlich als Werbelink gekennzeichneten Verweis zu Amazon.de anzeigen. Bei einem qualifizierten Kauf über einen solchen Link kann der Betreiber von Seitenweise eine Provision erhalten. Für Nutzerinnen und Nutzer entstehen dadurch keine zusätzlichen Kosten. Die Verfügbarkeit oder Höhe einer Provision beeinflusst weder Buchsuche noch Empfehlungen, Sortierung oder Bewertung von Büchern.</p>
-  <p>Ein Amazon-Link wird nur nach einer bewussten Aktion geöffnet. Die Amazon-Seite wird nicht innerhalb der App dargestellt, sondern an den auf dem Gerät vorgesehenen externen Browser beziehungsweise die zuständige externe Anwendung übergeben. Seitenweise setzt hierfür kein Amazon-Tracking-SDK ein, legt keine Amazon-Cookies an und übermittelt keine persönliche Bibliothek, Bewertungen, Notizen, Kontaktdaten oder Google-Kontodaten an Amazon.</p>
-  <p>Der aufgerufene Link kann die ISBN beziehungsweise eine Amazon-Produktkennung des ausgewählten Buches sowie die öffentliche Partnerkennung von Seitenweise enthalten. Nach dem Öffnen verarbeitet Amazon technisch bedingt insbesondere Verbindungsdaten wie die IP-Adresse, Browser- und Geräteinformationen und gegebenenfalls Daten aus einem vorhandenen Amazon-Konto nach eigener Verantwortlichkeit und den dort geltenden Datenschutzbestimmungen. Ob und welche Cookies oder vergleichbaren Technologien Amazon im externen Browser verwendet, richtet sich nach den Einstellungen und Einwilligungen bei Amazon beziehungsweise im verwendeten Browser.</p>
-  <p>Die Nutzung der Amazon-Verlinkung ist optional. Ein Buch kann unabhängig davon in Seitenweise gespeichert, verwaltet und bewertet werden.</p>
-  <p><a href="https://www.amazon.de/gp/help/customer/display.html?nodeId=201909010">Datenschutzerklärung von Amazon.de</a></p>
+  <h2>9. Lokale Rückgabe-Erinnerungen und Benachrichtigungen</h2>
+  <p>Für freiwillige Erinnerungen an fällige Ausleihen kann Seitenweise lokale Android-Benachrichtigungen verwenden. Auf Android-Versionen, die dies verlangen, fragt die App dafür die Benachrichtigungsberechtigung ab. Die Planung der Erinnerung erfolgt lokal auf dem Gerät; hierfür wird kein Seitenweise-Server betrieben und es werden keine Erinnerungsinhalte an einen Seitenweise-Dienst übertragen.</p>
 
-  <h2>10. Keine personalisierte Werbung und kein Profiling durch Seitenweise</h2>
-  <p>Seitenweise verwendet keine Werbe-SDKs und erstellt kein personenbezogenes Werbeprofil. Externe Kaufmöglichkeiten erscheinen nur im fachlich passenden Buchkontext und lösen keine automatische Weiterleitung aus. Empfehlungen werden aus lokal gespeicherten Buchinformationen und Ergebnissen der verwendeten Buchkataloge erzeugt. Es wird kein zentrales Nutzerprofil auf Servern des Betreibers angelegt.</p>
+  <h2>10. Kauf- und Affiliate-Funktionen</h2>
+  <p>Im aktuellen Release-Build sind die technisch vorbereiteten Amazon- und genialokal-Kauflinks deaktiviert. Seitenweise enthält kein Werbe- oder Affiliate-Tracking-SDK. Vor einer späteren Aktivierung solcher Links wird diese Datenschutzerklärung erneut gegen den dann tatsächlich veröffentlichten Datenfluss und die verwendeten Partnerkennungen geprüft.</p>
 
-  <h2>11. Technische Protokollierung</h2>
-  <p>Die App kann zur Fehlerbehandlung technische Meldungen im lokalen Android-Systemprotokoll erzeugen. Seitenweise betreibt derzeit keinen eigenen Dienst zur zentralen Erfassung von Crash-, Analyse- oder Telemetriedaten.</p>
+  <h2>11. Keine personalisierte Werbung und kein Profiling durch Seitenweise</h2>
+  <p>Seitenweise verwendet keine personalisierte Werbung und erstellt kein zentrales personenbezogenes Werbeprofil. Empfehlungen werden aus lokal gespeicherten Buchinformationen und Ergebnissen der verwendeten Buchkataloge erzeugt. Es wird kein zentrales Nutzerprofil auf Servern des Betreibers angelegt.</p>
 
-  <h2>12. Rechtsgrundlagen</h2>
-  <p>Soweit personenbezogene Daten durch die App verarbeitet werden, erfolgt dies insbesondere zur Bereitstellung angeforderter App-Funktionen gemäß Art. 6 Abs. 1 lit. b DSGVO, aufgrund einer Einwilligung bei bewusst ausgelösten optionalen Funktionen gemäß Art. 6 Abs. 1 lit. a DSGVO, soweit einschlägig, oder auf Grundlage berechtigter Interessen gemäß Art. 6 Abs. 1 lit. f DSGVO, soweit dies für einen sicheren und technisch zuverlässigen Betrieb erforderlich ist.</p>
-  <p>Das Bereitstellen freiwilliger, gekennzeichneter Amazon-Werbelinks und die mögliche Finanzierung der Weiterentwicklung von Seitenweise erfolgen auf Grundlage berechtigter Interessen gemäß Art. 6 Abs. 1 lit. f DSGVO. Der eigentliche Aufruf erfolgt erst nach einer bewussten Handlung der Nutzerin oder des Nutzers.</p>
+  <h2>12. Technische Protokollierung</h2>
+  <p>Die App kann zur Fehlerbehandlung technische Meldungen im lokalen Android-Systemprotokoll erzeugen. Seitenweise betreibt derzeit keinen eigenen Dienst zur zentralen Erfassung von Crash-, Analyse- oder Telemetriedaten. Davon unabhängig verarbeitet der Google Code Scanner die in Abschnitt 6 beschriebenen SDK-Diagnose- und Nutzungsdaten.</p>
 
-  <h2>13. Speicherdauer und Löschung</h2>
+  <h2>13. Rechtsgrundlagen</h2>
+  <p>Soweit personenbezogene Daten durch die App verarbeitet werden, erfolgt dies insbesondere zur Bereitstellung angeforderter App-Funktionen gemäß Art. 6 Abs. 1 lit. b DSGVO, aufgrund einer Einwilligung bei bewusst aktivierten optionalen Funktionen gemäß Art. 6 Abs. 1 lit. a DSGVO, soweit einschlägig, oder auf Grundlage berechtigter Interessen gemäß Art. 6 Abs. 1 lit. f DSGVO, soweit dies für einen sicheren und technisch zuverlässigen Betrieb erforderlich ist.</p>
+
+  <h2>14. Speicherdauer und Löschung</h2>
   <p>Lokal gespeicherte Daten bleiben grundsätzlich auf dem Gerät, bis sie innerhalb der App gelöscht, durch Zurücksetzen/Löschen der App entfernt oder durch eine Wiederherstellung ersetzt werden.</p>
-  <p>Google-Drive-Sicherungen bleiben im App-Datenbereich des verbundenen Google-Kontos gespeichert, bis sie durch Seitenweise überschrieben oder über die dafür vorgesehene Löschfunktion entfernt werden. Für Daten externer Buchdienste und für Daten, die nach dem bewussten Öffnen eines Amazon-Links durch Amazon verarbeitet werden, gelten deren jeweilige Bedingungen, Datenschutzbestimmungen und Löschfristen.</p>
+  <p>Google-Drive-Sicherungen bleiben im App-Datenbereich des verbundenen Google-Kontos gespeichert, bis sie durch eine neue Sicherung ersetzt beziehungsweise über die in Seitenweise angebotene Löschfunktion entfernt werden. Für von externen Buchdiensten verarbeitete Daten gelten zusätzlich deren jeweilige Bedingungen, Datenschutzbestimmungen und Löschfristen.</p>
+  <p>Da Seitenweise kein eigenes Benutzerkonto und kein eigenes Backend anbietet, existiert kein separates Seitenweise-Konto, dessen Löschung beantragt werden müsste.</p>
 
-  <h2>14. Datenübermittlung in Drittländer</h2>
-  <p>Bei der Nutzung externer Dienste, insbesondere von Google, Internet Archive/Open Library oder nach dem bewussten Öffnen eines Amazon-Links, kann eine Verarbeitung von Daten auch außerhalb der Europäischen Union beziehungsweise des Europäischen Wirtschaftsraums stattfinden. Für solche Verarbeitungen gelten die jeweiligen Datenschutz- und Transfermechanismen des betreffenden Anbieters.</p>
+  <h2>15. Datenübertragung und Sicherheit</h2>
+  <p>Die von Seitenweise angestoßenen Netzwerkzugriffe auf externe Dienste erfolgen über HTTPS. Die Android-App verbietet zusätzlich unverschlüsselten Cleartext-Traffic im Manifest. Für Google Drive verwendet Seitenweise den eingeschränkten <code>drive.appdata</code>-Scope statt eines allgemeinen Zugriffs auf persönliche Drive-Dateien.</p>
 
-  <h2>15. Rechte betroffener Personen</h2>
+  <h2>16. Datenübermittlung in Drittländer</h2>
+  <p>Bei der Nutzung externer Dienste, insbesondere von Google oder Internet Archive/Open Library, kann eine Verarbeitung von Daten auch außerhalb der Europäischen Union beziehungsweise des Europäischen Wirtschaftsraums stattfinden. Für solche Verarbeitungen gelten die jeweiligen Datenschutz- und Transfermechanismen des betreffenden Anbieters.</p>
+
+  <h2>17. Rechte betroffener Personen</h2>
   <p>Soweit die gesetzlichen Voraussetzungen vorliegen, bestehen insbesondere Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit, Widerspruch sowie Widerruf einer erteilten Einwilligung mit Wirkung für die Zukunft.</p>
   <p>Da ein großer Teil der Daten ausschließlich lokal auf dem eigenen Gerät oder im eigenen Google-Drive-App-Datenbereich gespeichert wird, kann der Betreiber auf diese Daten regelmäßig nicht selbst zugreifen. Lokale Daten können direkt in der App beziehungsweise durch Löschen der App entfernt werden. Cloud-Sicherungen können über die in Seitenweise vorgesehene Löschfunktion entfernt werden.</p>
   <p>Für datenschutzbezogene Anfragen: <a href="mailto:info@seitenweise-app.de">info@seitenweise-app.de</a>. Außerdem besteht ein Beschwerderecht bei einer zuständigen Datenschutzaufsichtsbehörde.</p>
 
-  <h2>16. Kinder und Jugendliche</h2>
+  <h2>18. Kinder und Jugendliche</h2>
   <p>Seitenweise richtet sich an Jugendliche ab 13 Jahren und Erwachsene. Die App ist nicht speziell für Kinder unter 13 Jahren bestimmt.</p>
 
-  <h2>17. Änderungen dieser Datenschutzerklärung</h2>
-  <p>Diese Datenschutzerklärung kann angepasst werden, wenn sich Funktionen, eingebundene Dienste oder rechtliche Anforderungen ändern. Die jeweils aktuelle Fassung wird über die in Google Play angegebene öffentliche Datenschutz-URL und innerhalb der App zugänglich gemacht.</p>
+  <h2>19. Änderungen dieser Datenschutzerklärung</h2>
+  <p>Diese Datenschutzerklärung wird angepasst, wenn sich Funktionen, eingebundene Dienste, SDKs oder rechtliche beziehungsweise Store-Anforderungen ändern. Die jeweils aktuelle Fassung wird über die in Google Play angegebene öffentliche Datenschutz-URL und innerhalb der App zugänglich gemacht.</p>
 
-  <footer>Seitenweise · Datenschutz · Stand 5. August 2026</footer>
+  <footer>Seitenweise · Datenschutz · Stand 17. August 2026</footer>
 </main>
 </body>
 </html>
